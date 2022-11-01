@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    font-family: 'Overpass', sans-serif;
+}
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 21, 25);
+}
+
+
+.cartao-app{
+    width: 100%;
+    max-width: 413px;
+    max-height: 413px;
+    padding: 30px 34px;
+    border-radius: 30px;
+    background-color: rgb(30, 37, 47);
+}
+
+
+.cartao-app .avaliacao{
+    width: 100%;
+    max-width: 345px;
+    max-height: 413px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cartao-app .avaliacao .container-estrela{
+    width: 48px;
+    padding: 15px 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 47, 56);
+    margin-bottom: 28px;
+}
+
+
+.cartao-app .avaliacao .container-estrela .estrela{
+    width: 16px;
+    height: 16px;
+}
+
+
+.cartao-app .avaliacao .titulo{
+    font-size: 29px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.cartao-app .avaliacao .texto{
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 31px;
+    color: var(--neutral-light);
+}
+
+
+.cartao-app .avaliacao .notas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+
+
+.cartao-app .avaliacao .notas .nota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.cartao-app .avaliacao .notas .nota:hover{
+    background-color: var(--neutral-light);
+    color: #fff;
+}
+
+
+.cartao-app .avaliacao .notas .radio{
+    display: none;
+}
+
+
+.padrao{
+    color: var(--neutral-medium);
+    background-color: rgb(38, 47, 56);
+}
+
+
+.selecionado{
+    background-color: var(--primary-orange);
+    color: #fff;
+}
+
+
+.cartao-app .avaliacao .btn-enviar{
+    width: 100%;
+    max-width: 343px;
+    height: 46px;
+    border-radius: 35px;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-orange);
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cartao-app .avaliacao .btn-enviar:hover{
+    background-color: #fff;
+    color: var(--primary-orange);
+}
+
+
+.feedback-avaliacao{
+    width: 345px;
+    height: 413px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.feedback-avaliacao .nota-fiscal{
+    width: 160px;
+    margin-top: 15px;
+}
+
+
+.feedback-avaliacao .feedback-nota-escolhida{
+    width: 190px;
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 35px;
+    background-color: rgb(38, 47, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: var(--primary-orange);
+}
+
+
+.feedback-avaliacao .titulo{
+    margin-top: 30px;
+    font-size: 28px;
+    color: #fff;
+}
+
+
+.feedback-avaliacao .texto{
+    width: 340px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--neutral-light);
+}

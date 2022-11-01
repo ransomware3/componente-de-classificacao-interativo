@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto - Componente de classificação interativo</title>
+        <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="src/css/reset.css">
+        <link rel="stylesheet" href="src/css/variables.css">
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="src/css/responsive.css">
+    </head>
+    <body>
+
+        <main>
+            <div class="cartao-app">
+
+                <form class="avaliacao" action="">
+                    <div class="container-estrela">
+                        <img class="estrela" src="src/images/icon-star.svg" alt="estrela alaranjada">
+                    </div>
+                    <h2 class="titulo">How did we do?</h2>
+                    <p class="texto">Please let us know how we did with your support request. All feedback is appreciated 
+                    to help us improve our offering!</p>
+                    <div class="notas">
+                        <label class="nota padrao" for="nota-1">1</label>
+                        <input class="radio" value="1" id="nota-1" name="nota" type="radio">
+
+                        <label class="nota padrao" for="nota-2">2</label>
+                        <input class="radio" value="2" id="nota-2" name="nota" type="radio">
+
+                        <label class="nota padrao" for="nota-3">3</label>
+                        <input class="radio" value="3" id="nota-3" name="nota" type="radio">
+
+                        <label class="nota padrao" for="nota-4">4</label>
+                        <input class="radio" value="4" id="nota-4" name="nota" type="radio">
+
+                        <label class="nota padrao" value="5" for="nota-5">5</label>
+                        <input class="radio" value="5" id="nota-5" name="nota" type="radio">
+                    </div>
+
+                    <button type="button" id="btn" class="btn-enviar">Submit</button>
+                </form>
+
+            </div>
+        </main>
+
+        <script src="src/js/index.js"></script>
+
+    </body>
+</html>
