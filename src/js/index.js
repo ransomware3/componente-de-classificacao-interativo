@@ -17,23 +17,15 @@ inputNotas.forEach((item, indice) => {
 })
 
 labelNotas.forEach((item, indice, array) => {
-    function removerSelecionado(){
-        item.classList.remove('selecionado')
-        item.classList.add('padrao')
-    }
-
-    function adicionarSelecionado(){
-        item.classList.remove('padrao')
-        item.classList.add('selecionado')
-    }
-    
     item.addEventListener('click', () => {
         labelNotas.forEach((item) => {
-            removerSelecionado()
+            item.classList.remove('selecionado')
+            item.classList.add('padrao')
         })
 
         if(item.classList.contains('padrao')){
-            adicionarSelecionado()
+            item.classList.remove('padrao')
+            item.classList.add('selecionado')
         }
     })
 
