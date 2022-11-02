@@ -86,13 +86,37 @@ main{
 }
 
 
+.cartao-app .avaliacao .notas-mobile .nota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
 .cartao-app .avaliacao .notas .nota:hover{
     background-color: var(--neutral-light);
     color: #fff;
 }
 
 
+.cartao-app .avaliacao .notas-mobile{
+    display: none;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+
+
 .cartao-app .avaliacao .notas .radio{
+    display: none;
+}
+
+
+.cartao-app .avaliacao .notas-mobile .radio{
     display: none;
 }
 
